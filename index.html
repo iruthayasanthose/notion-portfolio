@@ -1,0 +1,703 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Iruthaya Santhose I</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="21e0ee99-67c3-42e3-ab0a-1e96739fe1e3" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="Iruthaya%20Santhose%20I%2021e0ee9967c342e3ab0a1e96739fe1e3/IRUTHAYA_SANTHOSE.jpg"/></div><h1 class="page-title">Iruthaya Santhose I</h1><p class="page-description"></p></header><div class="page-body"><div id="1b69892e-29f6-4be7-b460-61c7754b6be7" class="column-list"><div id="407b9cd7-f412-4cbb-b2d3-06b4c91d6fb3" style="width:87.5%" class="column"><p id="9ac2e33e-7e26-4f44-b944-149a091558a5" class="">Solution-driven web developer adept at contributing to highly collaborative work environment and finding solutions. Proven experience developing consumer-focused websites using HTML, CSS, PHP and JavaScript. Good knowledge of the best practices for web design, user experience, and speed.</p></div><div id="70910f14-a121-4640-9b22-7ae3554ffda6" style="width:12.499999999999996%" class="column"><p id="aa55727b-23a8-409e-b53c-5fca2560e014" class="">
+</p></div></div><p id="4d74dcbf-5ca2-4164-801b-799618e5b2ff" class="">
+</p><h2 id="2652591e-d5b3-483a-9424-8ba814b2c4ce" class="">Contact</h2><div id="f22e2f0b-dc9e-40df-93ed-c7e4fd1d3bce" class="column-list"><div id="3dee5a5e-38ee-44f4-ae31-adbcaedb439e" style="width:37.5%" class="column"><p id="90e70110-7987-4ebd-8179-a91dcaff9183" class=""><a href="tel:+918778103808">+91 877 8103 808</a></p><p id="d21b9138-7b89-4400-a93f-f4c5d1c498e1" class=""><a href="https://www.notion.so/Course-Materials-Comprehensive-Course-on-Google-My-Business-GMB-Services-b083a809ee3b4653a88a2b8e37393372?pvs=21">johnsanthosh69@gmail.com</a></p></div><div id="9b8a9ae3-03f4-4585-9044-092f2de6c379" style="width:62.5%" class="column"><p id="3e647f15-33ce-4385-b363-869d3cfec713" class="">Bengaluru, India</p><p id="27422365-fb3e-4f30-a503-229f06cdab05" class=""><a href="http://linkedin.com/in/iruthaya-santhose">Linkedin</a></p></div></div><p id="81fe98a0-0e88-4851-89db-e0cb8dde8df4" class="">
+</p><hr id="e25a8014-9041-48db-8954-1c85cfa840dc"/><p id="f3af999e-99f0-4e51-a5af-eeab20012ccc" class="">
+</p><h2 id="fec8b132-8ed1-40fc-8fb8-9e28673dc4cd" class="">Professional experience</h2><div id="00ca6422-7f89-421d-a975-fdd09a5bd26d" class="column-list"><div id="88681fa5-5b83-4c7f-8757-3deeaf41f6f3" style="width:37.5%" class="column"><p id="de636be4-cec3-43c6-b58f-bf6d026e7c43" class="">2023 - today</p></div><div id="fff95ffa-9bf8-482d-b46b-cf9ecc1aea3b" style="width:62.5%" class="column"><p id="8ed129ad-2ed6-43a9-944d-c452383ff332" class=""><strong>GMB Consultant</strong></p><p id="4c80f0a2-4f2e-4f6c-9ef4-fb6ab1dc39d0" class="">Joy Printz</p><ul id="8fb5939b-e8e8-4b25-9623-ab1a0b17d83d" class="bulleted-list"><li style="list-style-type:disc">Managing Google My Business Profile</li></ul><ul id="2170abc3-dce7-4b17-b9f8-940f21241913" class="bulleted-list"><li style="list-style-type:disc">Improving Leads &amp; Sales</li></ul></div></div><div id="238210e8-eb62-4f83-8378-21f8105262ee" class="column-list"><div id="3b770c50-5442-424f-804d-d468c0a791de" style="width:37.5%" class="column"><p id="df3d5683-4ed9-4de6-8c1d-6da21be9b4d1" class="">2023 - today</p></div><div id="7a298aea-dd0f-4432-9a94-ec0a9e92e430" style="width:62.5%" class="column"><p id="a766ead3-630e-4f00-a3bf-41e0674ecac8" class=""><strong>Web Developer &amp; GMB Consultant</strong></p><p id="750535c0-b12a-4817-ae3b-ab2b7dfbd4e6" class="">Reyna Tattooz</p><ul id="ae492e32-4ed6-4ca2-be94-3e07db3d500f" class="bulleted-list"><li style="list-style-type:disc">Creating and managing website activities</li></ul><ul id="0642195e-bb1e-42ce-b534-a966ab3446e4" class="bulleted-list"><li style="list-style-type:disc">Managing Google My Business Profile<ul id="bcb2c060-45ce-4562-a9bf-b30d9b3bf4d8" class="bulleted-list"><li style="list-style-type:circle">Added Phone Number</li></ul><ul id="7c597613-5390-4355-85e2-9c5db15fc698" class="bulleted-list"><li style="list-style-type:circle">SEO Targeting</li></ul></li></ul><ul id="793a8dea-223a-433a-a4e7-6870634d86a1" class="bulleted-list"><li style="list-style-type:disc">Managing SEM Campaign</li></ul><ul id="0c101cf8-db82-47ca-9023-c7694d1cbd27" class="bulleted-list"><li style="list-style-type:disc">Improving Leads &amp; Sales</li></ul></div></div><div id="f9149737-5b1b-4da9-8845-460977c1f6a1" class="column-list"><div id="dc9e3afd-9037-4356-8755-d4d01d5452a7" style="width:37.5%" class="column"><p id="3e3d4e8a-9e1c-434f-afad-ebda1e3bc8ec" class="">2023 - today</p></div><div id="7da91597-0fc5-4bc3-ae5b-a75c9de7c1a3" style="width:62.5%" class="column"><p id="27bb6ab4-4395-4bb0-a7cc-0e43181f992e" class=""><strong>GMB Consultant</strong></p><p id="35c060ca-4a18-4e44-86f7-4b0a8368da84" class="">MobileFix</p><ul id="ce548e7a-25d9-4b2f-b0f7-1211ad9060f6" class="bulleted-list"><li style="list-style-type:disc">Managing Google My Business Profile</li></ul><ul id="4a30b422-5892-46be-b4ad-fdf11b27c93c" class="bulleted-list"><li style="list-style-type:disc">Managing SEM Ad Campaigns</li></ul><ul id="91e88959-8f2f-41a7-bb55-f9d81b79292a" class="bulleted-list"><li style="list-style-type:disc">Increasing Leads</li></ul></div></div><div id="a5ea0c5e-9ac0-4c24-94cb-32092aae59ce" class="column-list"><div id="a833f0a9-5a85-4544-8d6d-e350add54c17" style="width:37.5%" class="column"><p id="b108665f-2608-4d74-898c-c2d667d31c2d" class="">2023 - today</p></div><div id="3e41cacc-d2c8-4489-961e-598c10fc6e72" style="width:62.5%" class="column"><p id="5ab152ad-a289-4b34-a89e-9656ee7a2c22" class=""><strong>Web Developer &amp; GMB Consultant</strong></p><p id="541e32ce-6edb-4673-a849-5be83a363fb1" class="">1Planet</p><ul id="9ff06abb-351b-47ef-b7d2-de38010a86d2" class="bulleted-list"><li style="list-style-type:disc">Creating and managing website activities</li></ul><ul id="13a76dc0-329d-48d5-a533-025aae085ae3" class="bulleted-list"><li style="list-style-type:disc">Managing Google My Business Profile</li></ul><ul id="970f702e-e148-4893-a9d4-5f7e380eddd4" class="bulleted-list"><li style="list-style-type:disc">Managing SEM Campaign</li></ul><ul id="c62c00b5-2b12-4f17-96cf-1949bd6b3ec8" class="bulleted-list"><li style="list-style-type:disc">Improving Leads &amp; Sales</li></ul><ul id="5dad03e6-070b-4706-b548-f3fa4d3ac801" class="bulleted-list"><li style="list-style-type:disc">Helped with SEO for the website</li></ul><ul id="c36b7419-5352-46ba-a42f-d517e8f128c1" class="bulleted-list"><li style="list-style-type:disc">Managing Google My Business Profile</li></ul><ul id="461e0a35-026a-4783-ab6c-4ca92932d770" class="bulleted-list"><li style="list-style-type:disc">Improving Leads &amp; Sales</li></ul></div></div><div id="7340e581-d03c-4580-a294-5b312d41718f" class="column-list"><div id="f09b0cb4-51e5-4080-a7ba-b02018f3fe3b" style="width:37.5%" class="column"><p id="3c20f413-fdbc-45b6-ae83-7e9be7e1a0b5" class="">2023 - today</p></div><div id="49728d83-ed70-4697-ba05-5356a6140a4e" style="width:62.5%" class="column"><p id="2f34941d-ede4-4b5d-b0a8-b44725a3fb3e" class=""><strong>Web Developer &amp; GMB Consultant</strong></p><p id="79f919f7-d218-4d62-af3b-c7037b2534a3" class="">MyBillz</p><ul id="2b7baac5-2dc2-487a-8924-130acd0b4cf3" class="bulleted-list"><li style="list-style-type:disc">Developed front-end for their CRM software as per the requirements</li></ul><ul id="9c38defb-5751-427e-9ce3-8eb7eea7a7e3" class="bulleted-list"><li style="list-style-type:disc">Helped with SEO for the website</li></ul><ul id="43bd440e-15b1-4248-b31f-fde004b92fd7" class="bulleted-list"><li style="list-style-type:disc">Managing Google My Business Profile</li></ul><ul id="5e3c2827-5999-41e3-9be1-acef4ac3b0d3" class="bulleted-list"><li style="list-style-type:disc">Improving Leads &amp; Sales</li></ul></div></div><div id="cdf35418-3cc6-411b-aea7-d99fd6b37f2b" class="column-list"><div id="3c58c0a3-2a8c-4a87-9067-80583b796435" style="width:37.5%" class="column"><p id="fd796e6e-7c5a-4e3f-bf97-f4d143385308" class="">2022 - today</p></div><div id="e203fde8-8dc9-4564-8469-b6877781a81e" style="width:62.5%" class="column"><p id="5e78ae7b-6378-4f12-8f00-c2c2af56d2e6" class=""><strong>Web Developer</strong></p><p id="528e55d4-4ccf-44bb-a88d-d601b9a076e0" class="">Kavinaya Natiyalaya School of Bharathanatiyam (KNSB)</p><ul id="7e2f3370-3e35-40f3-a6df-999c4fe471e8" class="bulleted-list"><li style="list-style-type:disc">Designed UI/UX features as per preferences</li></ul><ul id="6cc8494b-3ece-487e-9e57-67ec2af50c61" class="bulleted-list"><li style="list-style-type:disc">Developed and managed website from scratch</li></ul></div></div><div id="2fa13568-c063-47d4-bb11-3679bc7b513d" class="column-list"><div id="abe2ad94-7d06-4966-b6f8-7134ac09abba" style="width:37.5%" class="column"><p id="b1aa0b33-f433-4546-a8e5-082f93676266" class="">2022</p></div><div id="955f1891-19cc-4a79-b67e-91c26132bab7" style="width:62.5%" class="column"><p id="57aaa05f-db1a-4946-b092-53004bd83cd9" class=""><strong>Web Developer</strong></p><p id="5811d8ea-5a84-4282-a456-72dca5dd389e" class="">Ebin Films</p><ul id="8f815c9c-e690-49ee-b342-50b2c3fc500a" class="bulleted-list"><li style="list-style-type:disc">Designed UI/UX features as per preferences</li></ul><ul id="659033f3-d688-4e65-8e4a-0849b75411c2" class="bulleted-list"><li style="list-style-type:disc">Developed and managed website from scratch</li></ul><ul id="8d13d981-726e-4951-ad21-1dff10589cd4" class="bulleted-list"><li style="list-style-type:disc">Created and updated tracking tags &amp; pixels information section.</li></ul></div></div><div id="ec664e90-6498-4bbc-9d95-88eec2b021a9" class="column-list"><div id="5094ca16-fba6-4743-99be-6d8f54cb094f" style="width:37.5%" class="column"><p id="48af8b5e-5d02-4fdd-8d79-412c36d446fe" class="">2021 - today</p></div><div id="65f2f597-4d68-46f1-9efa-60230bfc029d" style="width:62.5%" class="column"><p id="470698d5-daa1-48ba-a3f0-baae6d8e4d50" class=""><strong>GMB Consultant</strong></p><p id="a58ddec9-a8f6-459c-81c5-8754a2443584" class="">Gadgify</p><ul id="90d34176-91a1-4cda-83b1-ab658c2047a7" class="bulleted-list"><li style="list-style-type:disc">Managing Google My Business Profile</li></ul><ul id="48390630-14e3-4101-986e-923d937bbf4f" class="bulleted-list"><li style="list-style-type:disc">Managing Ad Campaign</li></ul><ul id="77068cc7-199e-4877-a71e-7f049f8a613b" class="bulleted-list"><li style="list-style-type:disc">Improving Leads &amp; Sales</li></ul></div></div><div id="231a6a8a-0732-4f03-9e14-b7ca1eafd07b" class="column-list"><div id="4a97b3ed-2958-4ff2-93d4-d0daec23ef6f" style="width:37.5%" class="column"><p id="1e3f3e0a-9b47-41fd-83d4-c8343bc7b50f" class="">2021  </p></div><div id="bfc25a95-6f39-4433-9584-3610f99b6a1f" style="width:62.5%" class="column"><p id="000a96a9-ef38-48b4-80fd-60a234d888ff" class=""><strong>Web Developer</strong></p><p id="d4c175d8-512a-4418-89fa-d14423a3547b" class="">Language Fluent</p><ul id="2f95d378-de9e-4215-a9ee-a3e507011024" class="bulleted-list"><li style="list-style-type:disc">Worked in website design &amp; frameworks.</li></ul><ul id="0b987f49-d2b9-4f2d-aeae-301b83dffebd" class="bulleted-list"><li style="list-style-type:disc">Helped in graphics.</li></ul><ul id="d3a92099-60df-4fe0-9989-def1a07506fa" class="bulleted-list"><li style="list-style-type:disc">Developed website from scratch.</li></ul></div></div><div id="b9ef12aa-da3d-4d26-b0de-54ec274ad69d" class="column-list"><div id="4fc60ad7-e375-4526-ac91-9b1610d17191" style="width:37.5%" class="column"><p id="435d4229-5b64-48cc-bebc-7b2ccc8a3399" class="">2021</p></div><div id="2b01ae91-eb86-406f-a83b-ad6a4186bc1c" style="width:62.5%" class="column"><p id="4222c921-e877-4ade-a19b-d8c3ff3b93d4" class=""><strong>Web Developer</strong></p><p id="a1153f5b-dd5b-4781-a8e9-34f456cc9e97" class="">JCSLasertech</p><ul id="6333ccd1-f0a0-42be-9968-a87fdb150313" class="bulleted-list"><li style="list-style-type:disc">Managed development of product catalogs on the website. </li></ul><ul id="ad310c95-ee3c-442d-b536-d1b8ab688d5f" class="bulleted-list"><li style="list-style-type:disc">Created &amp; updated shipments and tracking information section. </li></ul><ul id="b550abc6-50dd-49c1-a9b5-f3b65b6e3069" class="bulleted-list"><li style="list-style-type:disc">Managed orders and reports for the website development.</li></ul></div></div><div id="f156cf38-e479-4651-aaf8-f3ef6d454f42" class="column-list"><div id="db62542f-ced3-4a6f-8eed-23cea6a4d91d" style="width:62.5%" class="column"><p id="13933de0-919d-4740-be4e-6949044939c4" class="">2021</p></div><div id="3bf4a616-200f-4385-8885-c6beb84f1ed7" style="width:100%" class="column"><p id="12d7e724-a3ba-4dbd-8285-c796a14c9dbe" class=""><strong>Web Developer</strong></p><p id="33f1db78-ed98-42ed-8838-ecb631204d35" class="">Sofodel</p><ul id="e03b1a5c-74ec-4942-a3b1-6b5d37028242" class="bulleted-list"><li style="list-style-type:disc">Worked on multiple websites.</li></ul><ul id="def6472d-bddf-4911-a457-0f82f8b4e83b" class="bulleted-list"><li style="list-style-type:disc">Fixed bugs in websites</li></ul><ul id="7a7a8f87-2798-44ba-bb6d-f4d4c2897400" class="bulleted-list"><li style="list-style-type:disc">Worked on mobile responsive of websites.</li></ul><p id="0086b681-cf90-47ca-bcd2-0d6e7fcfb7a3" class="">
+</p></div></div><div id="5528077b-154c-48b7-a0e5-f0aa57aa780e" class="column-list"><div id="9c8dc0fa-abb9-4187-8ccd-207fb7e02745" style="width:37.5%" class="column"><p id="38cca48f-835f-46ca-98ea-eec553f97b55" class="">2021</p></div><div id="d510b44c-d8e0-4da5-88f9-3a749c8fc0b4" style="width:62.5%" class="column"><p id="ba27cac1-63fa-4ced-9813-597dde4d5c68" class=""><strong>Web Developer</strong></p><p id="7e7efd13-b484-4646-857c-d60aab1170af" class="">Gadgify</p><ul id="2f202c82-fb38-4ef4-ac75-346d9efb3914" class="bulleted-list"><li style="list-style-type:disc">Designed UI/UX features</li></ul><ul id="4cff0c46-2622-4d78-802e-6cd799a47c6d" class="bulleted-list"><li style="list-style-type:disc">Developed and managed e-commerce website from scratch</li></ul><ul id="9a369e77-6a33-4824-8828-0cb0f11d2357" class="bulleted-list"><li style="list-style-type:disc">Added additional features for the client’s preferences</li></ul></div></div><div id="57643e4c-77d9-4b40-ae45-bc236aa3e5ac" class="column-list"><div id="d75bc522-cf61-407c-9825-ca0107c0281f" style="width:37.5%" class="column"><p id="39d2f602-4248-413d-9828-f62a42307e6a" class="">2020</p></div><div id="8a8e3f37-16b9-44c2-9ca1-ee0e504a8851" style="width:62.5%" class="column"><p id="f8994ea8-8ef1-494d-a30d-5c8bb0cb28d4" class=""><strong>Front-end</strong> <strong>Web Developer</strong></p><p id="3cfe7940-6e9a-4ec3-a37a-34edd894b2f9" class="">iBilling</p><ul id="71e137a8-357a-4b80-a1e3-326b5764386d" class="bulleted-list"><li style="list-style-type:disc">Developed front-end for their CRM software as per the requirements</li></ul><ul id="673fb72a-011f-4eec-a8a4-cc491c87335b" class="bulleted-list"><li style="list-style-type:disc">Helped the back-end in testing part</li></ul><ul id="02a77b09-0c50-46a3-b4e9-3e1b7922e350" class="bulleted-list"><li style="list-style-type:disc">Helped with SEO for the website</li></ul></div></div><div id="d8d08f64-2760-46a8-85ee-0b3e31582b70" class="column-list"><div id="d9ec6375-5f99-4c6b-9956-18157da13105" style="width:37.5%" class="column"><p id="b027c89e-29ab-4265-a83d-1e104fba773e" class="">2019</p></div><div id="956ab19a-d0f6-4bfc-b484-81a0cbf4c5f0" style="width:62.5%" class="column"><p id="96543bca-8a8c-4d82-a5b5-fd94badd6169" class=""><strong>Web Developer</strong></p><p id="5db43755-d6af-4ce6-80dd-fd9ca87b9ae6" class="">Mobilefix</p><ul id="1c441e77-e4a8-4d27-abb7-c06d4ffcc49d" class="bulleted-list"><li style="list-style-type:disc">Designed their UI/UX features</li></ul><ul id="7d791fa0-4d59-4ba8-b15f-c63d91caad8c" class="bulleted-list"><li style="list-style-type:disc">Developed and managed website from scratch</li></ul><ul id="37ff7ec2-3c4d-46cf-aa76-7ff3ae89b149" class="bulleted-list"><li style="list-style-type:disc">Developed and added additional features for the client’s preferences</li></ul><ul id="001b8016-c285-40c1-a115-0f6cd6840220" class="bulleted-list"><li style="list-style-type:disc">Created and updated tracking tags &amp; pixels information section.</li></ul><p id="81bb06dc-7f11-40b4-8b25-106fe43ed9fd" class="">
+</p><p id="08ecd2e3-7d25-460c-837a-533f839e6f2e" class="">
+</p></div></div><hr id="a0f0df96-b311-4828-bf71-f5961dd46848"/><p id="6a3fdb0b-c8ef-4190-9fda-bf831b4bad58" class="">
+</p><h2 id="52831058-91eb-4722-be74-105bef6cf670" class="">Expertise</h2><div id="104a7478-1f14-48cd-9191-74463fd12d2f" class="collection-content"><h4 class="collection-title">Expertise</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesTitle"><path d="M0.637695 13.1914C1.0957 13.1914 1.32812 13 1.47852 12.5215L2.24414 10.3887H6.14746L6.90625 12.5215C7.05664 13 7.2959 13.1914 7.74707 13.1914C8.22559 13.1914 8.5332 12.9043 8.5332 12.4531C8.5332 12.2891 8.50586 12.1523 8.44434 11.9678L5.41602 3.79199C5.2041 3.21777 4.82129 2.9375 4.19922 2.9375C3.60449 2.9375 3.21484 3.21777 3.0166 3.78516L-0.0322266 12.002C-0.09375 12.1797 -0.121094 12.3232 -0.121094 12.4668C-0.121094 12.918 0.166016 13.1914 0.637695 13.1914ZM2.63379 9.12402L4.17871 4.68066H4.21973L5.76465 9.12402H2.63379ZM12.2793 13.2324C13.3115 13.2324 14.2891 12.6787 14.7129 11.8037H14.7402V12.5762C14.7471 12.9863 15.0273 13.2393 15.4238 13.2393C15.834 13.2393 16.1143 12.9795 16.1143 12.5215V8.00977C16.1143 6.49902 14.9658 5.52148 13.1543 5.52148C11.7666 5.52148 10.6592 6.08887 10.2695 6.99121C10.1943 7.15527 10.1533 7.3125 10.1533 7.46289C10.1533 7.81152 10.4062 8.04395 10.7686 8.04395C11.0215 8.04395 11.2129 7.94824 11.3496 7.73633C11.7529 6.99121 12.2861 6.65625 13.1064 6.65625C14.0977 6.65625 14.6992 7.20996 14.6992 8.1123V8.67285L12.5664 8.7959C10.7686 8.8916 9.77734 9.69824 9.77734 11.0107C9.77734 12.3369 10.8096 13.2324 12.2793 13.2324ZM12.6621 12.1387C11.8008 12.1387 11.2129 11.667 11.2129 10.9561C11.2129 10.2725 11.7598 9.82129 12.7578 9.75977L14.6992 9.62988V10.3203C14.6992 11.3457 13.7969 12.1387 12.6621 12.1387Z"></path></svg></span>Name</th><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesNumber"><path d="M2.4834 10.9902H4.33594L3.75488 13.8887C3.74121 13.9639 3.72754 14.0664 3.72754 14.1416C3.72754 14.5381 3.99414 14.7637 4.39746 14.7637C4.81445 14.7637 5.09473 14.5449 5.18359 14.1143L5.80566 10.9902H8.79297L8.21191 13.8887C8.19824 13.9639 8.18457 14.0664 8.18457 14.1416C8.18457 14.5381 8.45117 14.7637 8.85449 14.7637C9.27148 14.7637 9.55176 14.5449 9.63379 14.1143L10.2627 10.9902H12.4502C12.9287 10.9902 13.2432 10.6758 13.2432 10.2109C13.2432 9.8418 12.9902 9.56836 12.6006 9.56836H10.5498L11.2129 6.28711H13.3662C13.8379 6.28711 14.1523 5.96582 14.1523 5.50098C14.1523 5.13184 13.9062 4.8584 13.5098 4.8584H11.5L12.0195 2.27441C12.0264 2.21973 12.0469 2.11035 12.0469 2.01465C12.0469 1.625 11.7666 1.39258 11.3633 1.39258C10.9053 1.39258 10.6797 1.63867 10.5977 2.05566L10.0303 4.8584H7.04297L7.5625 2.27441C7.57617 2.21973 7.58984 2.11035 7.58984 2.01465C7.58984 1.625 7.30957 1.39258 6.91309 1.39258C6.44824 1.39258 6.21582 1.63867 6.13379 2.05566L5.57324 4.8584H3.54297C3.06445 4.8584 2.75 5.18652 2.75 5.65137C2.75 6.03418 3.00293 6.28711 3.39258 6.28711H5.28613L4.62305 9.56836H2.63379C2.15527 9.56836 1.84082 9.89648 1.84082 10.3613C1.84082 10.7373 2.09375 10.9902 2.4834 10.9902ZM6.09277 9.56836L6.75586 6.28711H9.74316L9.08008 9.56836H6.09277Z"></path></svg></span>Percent</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/kind_gray.svg" style="width:14px;height:14px"/></span>Skill</th></tr></thead><tbody><tr id="148c48a3-b4f8-4cdf-b702-a7aaf69faf30"><td class="cell-title"><a href="https://www.notion.so/HTML-CSS-148c48a3b4f84cdfb702a7aaf69faf30?pvs=21">HTML &amp; CSS</a></td><td class="cell-w^s|">100%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Technical</span></td></tr><tr id="12f4837f-e4c2-45e4-8552-01e2ade929cf"><td class="cell-title"><a href="https://www.notion.so/JavaScript-12f4837fe4c245e4855201e2ade929cf?pvs=21">JavaScript</a></td><td class="cell-w^s|">70%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Technical</span></td></tr><tr id="62124cff-fa7a-44a1-a7ca-7a5a9ded1962"><td class="cell-title"><a href="https://www.notion.so/PHP-62124cfffa7a44a1a7ca7a5a9ded1962?pvs=21">PHP</a></td><td class="cell-w^s|">90%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Technical</span></td></tr><tr id="5417749a-bf35-4431-bdd8-47472d686c7b"><td class="cell-title"><a href="https://www.notion.so/My-SQL-5417749abf354431bdd847472d686c7b?pvs=21">My SQL</a></td><td class="cell-w^s|">90%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Technical</span></td></tr><tr id="1434a298-a13e-41d0-9a13-22bbfe8bad8e"><td class="cell-title"><a href="https://www.notion.so/Wordpress-1434a298a13e41d09a1322bbfe8bad8e?pvs=21">Wordpress</a></td><td class="cell-w^s|">100%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Technical</span></td></tr><tr id="44b655e0-223d-424a-8ea6-c8b4b3235888"><td class="cell-title"><a href="https://www.notion.so/Bootstrap-44b655e0223d424a8ea6c8b4b3235888?pvs=21">Bootstrap</a></td><td class="cell-w^s|">70%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Technical</span></td></tr><tr id="eb434530-ad4b-4289-855c-409c50364fe3"><td class="cell-title"><a href="https://www.notion.so/Tailwind-eb434530ad4b4289855c409c50364fe3?pvs=21">Tailwind</a></td><td class="cell-w^s|">60%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Technical</span></td></tr><tr id="4e48d969-85d2-4690-aad3-c75062560022"><td class="cell-title"><a href="https://www.notion.so/React-JS-4e48d96985d24690aad3c75062560022?pvs=21">React JS</a></td><td class="cell-w^s|">70%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Technical</span></td></tr><tr id="381ead47-7b90-481f-9ab6-472a4665e489"><td class="cell-title"><a href="https://www.notion.so/Github-381ead477b90481f9ab6472a4665e489?pvs=21">Github</a></td><td class="cell-w^s|">85%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Technical</span></td></tr><tr id="871cac1f-9222-4b87-83cb-b4ddf6d0466b"><td class="cell-title"><a href="https://www.notion.so/Parcel-871cac1f92224b8783cbb4ddf6d0466b?pvs=21">Parcel</a></td><td class="cell-w^s|">80%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Technical</span></td></tr><tr id="655f29b6-d3b1-42b9-aa17-588d95391ee1"><td class="cell-title"><a href="https://www.notion.so/Netlify-655f29b6d3b142b9aa17588d95391ee1?pvs=21">Netlify</a></td><td class="cell-w^s|">85%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Technical</span></td></tr><tr id="07113238-3da3-4ff0-a7a4-a0f3a8b07d45"><td class="cell-title"><a href="https://www.notion.so/VS-Code-071132383da34ff0a7a4a0f3a8b07d45?pvs=21">VS Code</a></td><td class="cell-w^s|">90%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Technical</span></td></tr><tr id="39dca522-22ab-48ee-891c-168cdbfe0fab"><td class="cell-title"><a href="https://www.notion.so/Figma-39dca52222ab48ee891c168cdbfe0fab?pvs=21">Figma</a></td><td class="cell-w^s|">75%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Technical</span></td></tr><tr id="08a5d927-4f6b-44f1-9f18-3f1901256649"><td class="cell-title"><a href="https://www.notion.so/Adobe-XD-08a5d9274f6b44f19f183f1901256649?pvs=21">Adobe XD</a></td><td class="cell-w^s|">75%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Technical</span></td></tr><tr id="cfa1e19c-6b32-4675-99ca-5dddf403aee7"><td class="cell-title"><a href="https://www.notion.so/Microsoft-Office-cfa1e19c6b32467599ca5dddf403aee7?pvs=21">Microsoft Office</a></td><td class="cell-w^s|">90%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Technical</span></td></tr><tr id="83742e1e-8bca-4179-bcb2-887377d15674"><td class="cell-title"><a href="https://www.notion.so/Google-Workspace-83742e1e8bca4179bcb2887377d15674?pvs=21">Google Workspace</a></td><td class="cell-w^s|">80%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Technical</span></td></tr><tr id="cf4df52a-3ad7-486e-bc3b-32d20565911c"><td class="cell-title"><a href="https://www.notion.so/Project-Management-cf4df52a3ad7486ebc3b32d20565911c?pvs=21">Project Management</a></td><td class="cell-w^s|">75%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Personal</span></td></tr><tr id="85ec3bdc-513f-41c1-ad03-776ec8a45130"><td class="cell-title"><a href="https://www.notion.so/English-85ec3bdc513f41c1ad03776ec8a45130?pvs=21">English</a></td><td class="cell-w^s|">80%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Language</span></td></tr><tr id="1c42992f-d286-4f26-b312-f7a0d21c8282"><td class="cell-title"><a href="https://www.notion.so/Tamil-1c42992fd2864f26b312f7a0d21c8282?pvs=21">Tamil</a></td><td class="cell-w^s|">100%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Language</span></td></tr><tr id="3a1e7045-f8c6-4f6c-b3ea-15edd2f87444"><td class="cell-title"><a href="https://www.notion.so/Malayalam-3a1e7045f8c64f6cb3ea15edd2f87444?pvs=21">Malayalam</a></td><td class="cell-w^s|">90%</td><td class="cell-;x|A"><span class="selected-value select-value-color-blue">Language</span></td></tr></tbody></table><br/><br/></div><p id="6abb80be-bf35-47a4-965e-275b48141cb1" class="">
+</p><p id="0dcdbcd3-af0f-4381-bbc7-278f2aec3fe9" class="">
+</p><hr id="4b7d16b3-2a14-426a-9006-114b09ba665d"/><p id="514bf8d7-d27a-4a35-a56a-1e220374b7f3" class="">
+</p><h2 id="353002c6-7325-4e0f-8e5d-910b4896c9fd" class="">Side projects </h2><div id="7c023297-a0fd-40df-b70d-a2c89ea0a3f6" class="collection-content"><h4 class="collection-title">Side projects</h4><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesTitle"><path d="M0.637695 13.1914C1.0957 13.1914 1.32812 13 1.47852 12.5215L2.24414 10.3887H6.14746L6.90625 12.5215C7.05664 13 7.2959 13.1914 7.74707 13.1914C8.22559 13.1914 8.5332 12.9043 8.5332 12.4531C8.5332 12.2891 8.50586 12.1523 8.44434 11.9678L5.41602 3.79199C5.2041 3.21777 4.82129 2.9375 4.19922 2.9375C3.60449 2.9375 3.21484 3.21777 3.0166 3.78516L-0.0322266 12.002C-0.09375 12.1797 -0.121094 12.3232 -0.121094 12.4668C-0.121094 12.918 0.166016 13.1914 0.637695 13.1914ZM2.63379 9.12402L4.17871 4.68066H4.21973L5.76465 9.12402H2.63379ZM12.2793 13.2324C13.3115 13.2324 14.2891 12.6787 14.7129 11.8037H14.7402V12.5762C14.7471 12.9863 15.0273 13.2393 15.4238 13.2393C15.834 13.2393 16.1143 12.9795 16.1143 12.5215V8.00977C16.1143 6.49902 14.9658 5.52148 13.1543 5.52148C11.7666 5.52148 10.6592 6.08887 10.2695 6.99121C10.1943 7.15527 10.1533 7.3125 10.1533 7.46289C10.1533 7.81152 10.4062 8.04395 10.7686 8.04395C11.0215 8.04395 11.2129 7.94824 11.3496 7.73633C11.7529 6.99121 12.2861 6.65625 13.1064 6.65625C14.0977 6.65625 14.6992 7.20996 14.6992 8.1123V8.67285L12.5664 8.7959C10.7686 8.8916 9.77734 9.69824 9.77734 11.0107C9.77734 12.3369 10.8096 13.2324 12.2793 13.2324ZM12.6621 12.1387C11.8008 12.1387 11.2129 11.667 11.2129 10.9561C11.2129 10.2725 11.7598 9.82129 12.7578 9.75977L14.6992 9.62988V10.3203C14.6992 11.3457 13.7969 12.1387 12.6621 12.1387Z"></path></svg></span>Name</th><th><span class="icon property-icon"><svg role="graphics-symbol" viewBox="0 0 16 16" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0" class="typesCheckbox"><path d="M3.85742 14.4561H12.1357C13.6123 14.4561 14.3779 13.6904 14.3779 12.2344V3.91504C14.3779 2.45215 13.6123 1.69336 12.1357 1.69336H3.85742C2.38086 1.69336 1.61523 2.45215 1.61523 3.91504V12.2344C1.61523 13.6973 2.38086 14.4561 3.85742 14.4561ZM3.93945 13.1162C3.30371 13.1162 2.95508 12.7812 2.95508 12.1182V4.02441C2.95508 3.36133 3.30371 3.0332 3.93945 3.0332H12.0537C12.6826 3.0332 13.0381 3.36133 13.0381 4.02441V12.1182C13.0381 12.7812 12.6826 13.1162 12.0537 13.1162H3.93945ZM7.26855 11.3115C7.51465 11.3115 7.72656 11.1885 7.87012 10.9697L10.9258 6.19141C11.0146 6.04785 11.0967 5.88379 11.0967 5.72656C11.0967 5.3916 10.7959 5.16602 10.4746 5.16602C10.2695 5.16602 10.085 5.27539 9.94141 5.50781L7.24121 9.8418L5.96973 8.22168C5.80566 8.00977 5.6416 7.93457 5.43652 7.93457C5.10156 7.93457 4.8418 8.20117 4.8418 8.54297C4.8418 8.70703 4.90332 8.85742 5.01953 9.00098L6.63281 10.9697C6.81738 11.209 7.01562 11.3115 7.26855 11.3115Z"></path></svg></span>Active</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/link_gray.svg" style="width:14px;height:14px"/></span>Link</th><th><span class="icon property-icon"><img src="https://www.notion.so/icons/clock_gray.svg" style="width:14px;height:14px"/></span>Timeframe</th></tr></thead><tbody><tr id="4c7f8a62-f960-4bd2-9630-58600546d184"><td class="cell-title"><a href="https://www.notion.so/Whack-A-Gopher-4c7f8a62f9604bd2963058600546d184?pvs=21"><img class="icon" src="https://www.notion.so/icons/checkmark_gray.svg"/>Whack A Gopher</a></td><td class="cell-DH;V"><div class="checkbox checkbox-on"></div></td><td class="cell-A:PV"><a href="https://whackagopher.online" class="url-value">https://whackagopher.online</a></td><td class="cell-Tf|z">2023</td></tr><tr id="437bf92b-c3e2-4680-853d-88d53c1861bc"><td class="cell-title"><a href="https://www.notion.so/Dev-Portfolio-437bf92bc3e24680853d88d53c1861bc?pvs=21"><img class="icon" src="https://www.notion.so/icons/checkmark_gray.svg"/>Dev Portfolio</a></td><td class="cell-DH;V"><div class="checkbox checkbox-on"></div></td><td class="cell-A:PV"><a href="iruthaya.netlify.app/" class="url-value">iruthaya.netlify.app/</a></td><td class="cell-Tf|z">2022</td></tr><tr id="53c13752-4fa9-480e-8506-47b2918bd5ff"><td class="cell-title"><a href="https://www.notion.so/Ledit-Online-Code-Editor-53c137524fa9480e850647b2918bd5ff?pvs=21"><img class="icon" src="https://www.notion.so/icons/checkmark_gray.svg"/>Ledit - Online Code Editor</a></td><td class="cell-DH;V"><div class="checkbox checkbox-on"></div></td><td class="cell-A:PV"><a href="file:///tmp/letsedit.netlify.app/" class="url-value">file:///tmp/letsedit.netlify.app/</a></td><td class="cell-Tf|z">2020</td></tr><tr id="38bc6d72-4962-4e16-ac0f-71dac62d1d1f"><td class="cell-title"><a href="https://www.notion.so/BASIC-s-App-38bc6d7249624e16ac0f71dac62d1d1f?pvs=21"><img class="icon" src="https://www.notion.so/icons/checkmark_gray.svg"/>BASIC’s App</a></td><td class="cell-DH;V"><div class="checkbox checkbox-on"></div></td><td class="cell-A:PV"><a href="basicsapp.netlify.app/" class="url-value">basicsapp.netlify.app/</a></td><td class="cell-Tf|z">2020</td></tr><tr id="7f3a7b0f-20ef-4808-a4ee-56f0c8831019"><td class="cell-title"><a href="https://www.notion.so/WEBiLO-Portfolio-7f3a7b0f20ef4808a4ee56f0c8831019?pvs=21"><img class="icon" src="https://www.notion.so/icons/checkmark_gray.svg"/>WEBiLO Portfolio</a></td><td class="cell-DH;V"><div class="checkbox checkbox-on"></div></td><td class="cell-A:PV"><a href="react-webilo.netlify.app/" class="url-value">react-webilo.netlify.app/</a></td><td class="cell-Tf|z">2019</td></tr><tr id="a6db9758-1f6b-4f3e-9a68-67c03ac150a2"><td class="cell-title"><a href="https://www.notion.so/Password-Generator-a6db97581f6b4f3e9a6867c03ac150a2?pvs=21"><img class="icon" src="https://www.notion.so/icons/checkmark_gray.svg"/>Password Generator</a></td><td class="cell-DH;V"><div class="checkbox checkbox-on"></div></td><td class="cell-A:PV"><a href="js-passgene.netlify.app/" class="url-value">js-passgene.netlify.app/</a></td><td class="cell-Tf|z">2019</td></tr></tbody></table><br/><br/></div><p id="52957fce-855e-40f6-aa09-5ed44ddb3c26" class="">
+</p><p id="8a9007c8-f6e9-48db-9323-668337351f88" class="">
+</p><hr id="f332b9c5-3ce6-43c4-917a-2843565dc338"/><h2 id="f8816cf3-a7d7-4fec-b63b-40f1e5b01ce1" class="">Achievements</h2><div id="7387ab31-0dda-48f1-9bc5-10946ac07858" class="column-list"><div id="b8c3ff7f-5fc5-4535-b513-7f358e142adb" style="width:62.5%" class="column"><p id="c2fe6c54-68f7-49ee-9595-d5b52b3665af" class="">2021 </p><p id="8d73a21c-9a7a-4f17-9c97-7e0bec0f6c29" class="">
+</p><p id="497cf950-ad48-486d-a436-5c6189f66246" class="">2020</p><p id="46100dba-7847-49ee-9024-d8cfcfa53676" class="">
+</p><p id="5d5cbcb4-255b-4fa2-826e-a2d4838a91f4" class="">2020</p><p id="5680a274-3cc5-4aa8-8e4f-4ac2a432e174" class="">
+</p><p id="90972aff-5800-4afe-80c5-d6e6dc841812" class="">2019</p><p id="5a5eb8fe-8d40-45c9-81e5-093da0bd78ef" class="">
+</p><p id="346b2b63-8efb-4d74-964d-19c836264b42" class="">2016</p><p id="2dc94ef0-a68f-49a3-89d0-105eafeeab0f" class="">
+</p></div><div id="7b23879f-d3d9-4ba3-b2e4-c7148fa1002b" style="width:112.5%" class="column"><p id="5ae1f2ee-1023-450d-b177-7eccdb070e7d" class="">Engaged in AI FOR ALL PROGRAM conducted by Intel</p><p id="1a64c5dd-dd69-4ff3-aa31-e9a65474298a" class="">
+</p><p id="f9393f90-83ad-462e-9ca9-48b47dd922ee" class="">Participated in Guvi’s World Record Event</p><p id="5c50412d-1f71-44ea-8d09-619302cbc4bf" class="">
+</p><p id="b5fb9b19-4115-4d88-8b51-61d273cc9dce" class="">Engaged in Web Development Class conducted by Accent Techno Soft</p><p id="61e4ba69-4d5a-43fc-a536-940feb567288" class="">
+</p><p id="2fcb4562-523e-431c-a5a5-b67175efb39f" class="">Engaged in Android Development Class conducted by Accent Techno Soft</p><p id="61a505c8-0e67-476b-87d8-7a755b180054" class="">
+</p><p id="b46a1894-3d07-4091-8ee7-8ead74e34270" class="">Won 2nd Prize in District Web Designing Competition.</p><p id="12f0adfb-c94a-493a-80ce-7de387627f4d" class="">
+</p></div></div><hr id="867355c1-b3b2-4e5b-899d-4581b2917952"/><h2 id="34b98e23-76b4-4c89-b958-6687a4dae9a0" class="">Interests</h2><div id="e3de7719-7e05-47d5-a51b-c4d09b77630c" class="column-list"><div id="51a82998-9696-4a84-a252-5661b0ace85b" style="width:37.5%" class="column"><p id="a9395de9-6aee-4aba-999f-6c67e2a399bd" class="">Programming</p><p id="aa265be7-7a43-47d5-b035-f10328309500" class="">Photography</p></div><div id="61c9efd2-fa00-4b56-b8da-d2838d932380" style="width:62.5%" class="column"><p id="bd771d76-ce5e-46c4-bcf8-d3a2ffedeeb7" class="">Designing</p><p id="ebd37544-31ee-4a09-aa1c-298cfe74d778" class="">Exploring</p><p id="8ec37d1e-69ad-4e87-bded-ec0cba9190e0" class="">
+</p></div></div><hr id="94ad451b-8677-4118-b1ab-a8aff1ff894b"/><h2 id="37403412-779b-46fd-8b99-f51c54833cc7" class="">Education</h2><div id="f755d4bf-41b2-44d1-b56a-7819118e2173" class="column-list"><div id="0ad5dd8d-3ad8-45b8-96b1-6fabfb5aba21" style="width:62.5%" class="column"><p id="901b6532-5f83-4959-b154-e73262172c0a" class="">2019 – 2022 </p></div><div id="ca5192e1-a346-453b-b0e9-2fad7f8e2c9b" style="width:112.5%" class="column"><p id="73bd1796-da72-4028-b0cc-083b408eabe9" class="">Sri Krishna Adithya College of Arts and Science</p><p id="4ac0f747-33b0-4d07-82fe-7cdf631382bf" class="">BSc in Information Technology</p><p id="15b67704-cb2c-45f3-981d-2f84159c6aff" class="">Graduated 2022</p></div></div><p id="d3d8d1bd-70a2-4b2e-a70b-3d0e56470782" class="">
+</p><hr id="ec612503-880d-4b41-b46a-f202954dd591"/><p id="6d973a6c-20b7-4ff0-a034-bdc45a9162a6" class="">
+</p><p id="8d7fd3a0-1f0a-4f7d-96d0-7846646a7d2c" class="">
+</p></div></article></body></html>
